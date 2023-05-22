@@ -1,0 +1,23 @@
+<!--Store this code in 'login.html' file inside the 'templates' folder-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Login </title>
+		<link rel="stylesheet" href="../static/style.css">	
+	</head>
+	<body>
+		<div class="logincontent" align="center">
+			<div class="logintop">
+				<h1>Public Information Page:</h1>
+				<b> Take a look at where our users come from!</b>
+				<div>{% for organization in organizations %}
+					<p style="color: black">{{ organization }}</p>
+					{% endfor %}
+				</div>
+			</div></br></br></br></br>
+			<div class="loginbottom">
+			</br></br>
+			</div>
+		</div>
+	</body>
+</html>
